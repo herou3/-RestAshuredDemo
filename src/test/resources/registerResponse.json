@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "required": [
+    "id",
+    "token"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer"
+    },
+    "token": {
+      "$id": "#/properties/token",
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "examples": [
+    {
+      "data": {
+        "id": 2,
+        "email": "janet.weaver@reqres.in",
+        "first_name": "Janetss",
+        "last_name": "Weaverss",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg"
+      },
+      "support": {
+        "url": "https://reqres.in/#support-heading",
+        "text": "To keep ReqRes free, contributions towards server costs are appreciated!"
+      }
+    }
+  ],
+  "required": [
+    "data",
+    "support"
+  ],
+  "properties": {
+    "data": {
+      "required": [
+        "id",
+        "first_name",
+        "email",
+        "last_name",
+        "avatar"
+      ],
+      "properties": {
+        "id": {
+          "type": "integer",
+          "default": 0
+        },
+        "first_name": {
+          "type": "string",
+          "default": ""
+        },
+        "email": {
+          "type": "string",
+          "default": ""
+        },
+        "last_name": {
+          "type": "string",
+          "default": ""
+        },
+        "avatar": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    },
+    "support": {
+      "default": {},
+      "required": [
+        "url",
+        "text"
+      ],
+      "properties": {
+        "url": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string",
+          "default": ""
+        }
+      }
+    }
+  }
+}
